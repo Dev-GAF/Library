@@ -1,8 +1,5 @@
 package gaf.dev.biblioteca.model;
 
-import gaf.dev.biblioteca.utils.DateValidator;
-import gaf.dev.biblioteca.utils.ValidatePersonalInformation;
-
 import java.time.LocalDate;
 import java.util.Objects;
 

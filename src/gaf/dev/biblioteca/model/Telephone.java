@@ -1,7 +1,5 @@
 package gaf.dev.biblioteca.model;
 
-import gaf.dev.biblioteca.utils.ValidatePersonalInformation;
-
 import java.util.Objects;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;

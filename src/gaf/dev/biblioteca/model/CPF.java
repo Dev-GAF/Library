@@ -1,7 +1,5 @@
 package gaf.dev.biblioteca.model;
 
-import gaf.dev.biblioteca.utils.ValidatePersonalInformation;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
