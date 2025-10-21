@@ -1,4 +1,4 @@
-package gaf.dev.biblioteca.model;
+package main.java.gaf.dev.biblioteca.model;
 
 import gaf.dev.biblioteca.utils.DateValidator;
 
@@ -115,6 +115,22 @@ public class Person implements DateValidator, Cloneable
             throw new IllegalArgumentException("Gender entered invalidly.");
 
         this.gender = gender;
+    }
+
+    public Person(String name, LocalDate dateBirth, char gender)
+    {
+        this.setName(name);
+
+        if (dateBirth==null)
+            throw new IllegalArgumentException("Birth date cannot be null.");
+
+        if (!this.isValid((byte)dateBirth.getDayOfMonth(), (byte)dateBirth.getMonthValue(), (byte)dateBirth.getYear()))
+            throw new IllegalArgumentException("Invalid birth date. It must be a real date and no more than 120 years old.");
+
+        this.dateBirth = dateBirth;
+        this.gender = gender;
+        this.rg=null;
+        this.cpf=null;
     }
 
     public String getName() { return name; }

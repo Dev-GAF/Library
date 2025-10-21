@@ -1,7 +1,7 @@
-package gaf.dev.biblioteca.repository.inmemory;
+package main.java.gaf.dev.biblioteca.repository.inmemory;
 
-import gaf.dev.biblioteca.model.Librarian;
-import gaf.dev.biblioteca.repository.LibrarianRepository;
+import main.java.gaf.dev.biblioteca.model.Librarian;
+import main.java.gaf.dev.biblioteca.repository.LibrarianRepository;
 
 import java.util.*;
 

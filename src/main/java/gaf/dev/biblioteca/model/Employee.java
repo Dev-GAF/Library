@@ -1,4 +1,4 @@
-package gaf.dev.biblioteca.model;
+package main.java.gaf.dev.biblioteca.model;
 
 import gaf.dev.biblioteca.utils.DateValidator;
 
@@ -109,7 +109,6 @@ public abstract class Employee extends Person implements DateValidator, Cloneabl
     public Employee(Employee model)
     {
         super(model);
-        if (model==null) throw new IllegalArgumentException("missing model.");
 
         this.registration = model.registration;
         this.hiringDate = model.hiringDate;

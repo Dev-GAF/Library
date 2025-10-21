@@ -1,4 +1,4 @@
-package gaf.dev.biblioteca.model;
+package main.java.gaf.dev.biblioteca.model;
 
 import java.util.Objects;
 import java.util.regex.Matcher;

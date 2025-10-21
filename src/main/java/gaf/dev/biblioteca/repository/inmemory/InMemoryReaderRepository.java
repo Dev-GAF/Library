@@ -1,7 +1,7 @@
-package gaf.dev.biblioteca.repository.inmemory;
+package main.java.gaf.dev.biblioteca.repository.inmemory;
 
-import gaf.dev.biblioteca.model.Reader;
-import gaf.dev.biblioteca.repository.ReaderRepository;
+import main.java.gaf.dev.biblioteca.model.Reader;
+import main.java.gaf.dev.biblioteca.repository.ReaderRepository;
 
 import java.time.LocalDate;
 import java.util.*;

@@ -1,6 +1,6 @@
-package gaf.dev.biblioteca.repository;
+package main.java.gaf.dev.biblioteca.repository;
 
-import gaf.dev.biblioteca.model.Reader;
+import main.java.gaf.dev.biblioteca.model.Reader;
 
 import java.time.LocalDate;
 import java.util.List;

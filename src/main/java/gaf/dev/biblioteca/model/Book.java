@@ -1,4 +1,4 @@
-package gaf.dev.biblioteca.model;
+package main.java.gaf.dev.biblioteca.model;
 
 import java.time.LocalDate;
 import java.util.Objects;
@@ -9,7 +9,7 @@ public class Book implements Cloneable
 
     private final String isbn; // Preliminary validation
     private final String title;
-    private final Person author;
+    private final Author author;
     private final String publisher;
     private final LocalDate publicationYear;
     private final int numberOfPages;
@@ -31,7 +31,7 @@ public class Book implements Cloneable
         return cleaned.matches("\\d{10}|\\d{13}");
     }
 
-    public Book(String isbn, String title, Person author, String publisher, String genre, String language,
+    public Book(String isbn, String title, Author author, String publisher, String genre, String language,
                 String edition, LocalDate publicationYear, int numberOfPages, String description,
                 double price, LocalDate registrationDate, String location)
     {
@@ -80,7 +80,7 @@ public class Book implements Cloneable
 
     public String getIsbn() { return this.isbn; }
 
-    public Person getAuthor() { return this.author; }
+    public Author getAuthor() { return this.author; }
 
     public String getTitle() { return this.title; }
 
@@ -124,7 +124,7 @@ public class Book implements Cloneable
     {
         if (o == null || getClass() != o.getClass()) return false;
         Book book = (Book) o;
-        return this.numberOfPages == book.numberOfPages && Double.compare(this.price, book.price) == 0 && Objects.equals(this.isbn, book.isbn) && Objects.equals(this.title, book.title) && Objects.equals(this.author, book.author) && Objects.equals(this.publisher, book.publisher) && Objects.equals(this.publicationYear, book.publicationYear) && Objects.equals(this.genre, book.genre) && Objects.equals(this.language, book.language) && Objects.equals(this.edition, book.edition) && Objects.equals(this.registrationDate, book.registrationDate) && Objects.equals(this.location, book.location) && Objects.equals(this.description, book.description);
+        return this.numberOfPages == book.numberOfPages && Double.compare(this.price, book.price) == 0 && Objects.equals(this.isbn, book.isbn) && Objects.equals(this.title, book.title) && Objects.equals(this.author.getName(), book.author.getName()) && Objects.equals(this.publisher, book.publisher) && Objects.equals(this.publicationYear, book.publicationYear) && Objects.equals(this.genre, book.genre) && Objects.equals(this.language, book.language) && Objects.equals(this.edition, book.edition) && Objects.equals(this.registrationDate, book.registrationDate) && Objects.equals(this.location, book.location) && Objects.equals(this.description, book.description);
     }
 
     @Override
@@ -139,7 +139,7 @@ public class Book implements Cloneable
 
         this.isbn = model.isbn;
         this.title = model.title;
-        this.author = model.author != null ? new Person(model.author) : null;
+        this.author = model.author != null ? new Author(model.author) : null;
         this.publisher = model.publisher;
         this.publicationYear = model.publicationYear;
         this.numberOfPages = model.numberOfPages;

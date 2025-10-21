@@ -1,4 +1,4 @@
-package gaf.dev.biblioteca.model;
+package main.java.gaf.dev.biblioteca.model;
 
 import java.time.LocalDate;
 import java.util.Objects;
@@ -46,7 +46,6 @@ public class Reader extends Person implements Cloneable
     public Reader(Reader model)
     {
         super(model);
-        if (model==null) throw new IllegalArgumentException("missing model.");
 
         this.registrationNumber = model.registrationNumber;
         this.telephone = model.telephone != null ? new Telephone(model.telephone.getValue()) : null;

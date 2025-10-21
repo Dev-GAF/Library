@@ -1,4 +1,4 @@
-package gaf.dev.biblioteca.utils;
+package main.java.gaf.dev.biblioteca.utils;
 
 public interface DateValidator
 {

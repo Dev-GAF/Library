@@ -1,6 +1,6 @@
-package gaf.dev.biblioteca.repository;
+package main.java.gaf.dev.biblioteca.repository;
 
-import gaf.dev.biblioteca.model.Book;
+import main.java.gaf.dev.biblioteca.model.Book;
 
 import java.util.List;
 import java.util.Optional;
